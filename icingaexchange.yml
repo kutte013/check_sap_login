@@ -1,4 +1,4 @@
-name: check_sap_hostctrl
+name: check_sap_login
 description: "file:///README.md"
 url: "https://github.com/kutte013/check_sap_login"
 vendor: Linux
