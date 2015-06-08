@@ -48,14 +48,9 @@ GetOptions(
 	);
 
 version();
+help();
 
-
-if ( $help eq "-h" || $help eq "-help" )
-	{
-		help();
-	}
-
-elsif ( $host eq undef || $sysnr eq undef || $user eq undef || $pass eq undef || $mandt eq undef )
+if ( $host eq undef || $sysnr eq undef || $user eq undef || $pass eq undef || $mandt eq undef )
         {
         print "Please use -h or -help to use the script with correct syntax!!\n";
         }
@@ -178,6 +173,7 @@ sub version{
 				print "\n";
 				print "Version: \n";
 				print "0.1 -> add Getopt::Long\n";
+				print "0.2 -> correct -h option\n";
 				print "\n";
 				print "For changes, ideas or bugs please contact kutte013\@gmail.com\n";
 				print "\n";
